@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" enctype="text/plain" action=" http://danbaytimi@gmail.com">
+        <div>
+            <div>
+                <label for="surname">Surname</label>
+                <input require type="text" placeholder="Williams">
+            </div>
+            <div>
+                <label for="firstname">First name</label>
+                <input require type="text" id="firstname" placeholder="Thomas">
+            </div>
+            <div>
+                <label for="middlename">Middle name</label>
+                <input require type="text" id="middlename" placeholder="Nestle">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="address">Address</label>
+                <input require type="text" id="address" placeholder="Address">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="phone">Mobile Number</label> <br>
+                <input id="phone" name="phone" type="tel">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input require type="email" name="email" placeholder="example@email.com">
+            </div>
+        </div>
+
+
+        <div id="payMode">
+            <div>
+                <label for="payinmode">Choose a mode of payment</label>
+                <select require id="payinmode">
+                    <option selected>Choose...</option>
+                    <option value="cash">Cash</option>
+                    <option value="cardPay">Card Payment</option>
+                    <option value="bankTransfer">Bank Transfer</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div id="payoutcurrD">
+                <label for="payoutcurr">In which currency do you want to recieve exchanged value? </label>
+                <select require id="payoutcurr">
+                    <option selected>Choose...</option>
+                    <option value="NGN">NGN</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CNY">CNY</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <input type="radio" name="mode">
+                        <label for="foreignCk">
+                            I want to send my exchange abroad
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="mode" id="">
+                        <label for="localCk">
+                            I want exchange in my bank account (Nigeria)
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="mode" id="">
+                        <label for="special">
+                            Special order
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="bankD">
+                <label for="bank">Bank</label>
+                <select require id="bank" name="bankn">
+                    <option>Choose...</option>
+                    <option value="Access Bank">Access Bank</option>
+                    <option value="Diamond Bank">Access Bank (Diamond Bank)</option>
+                    <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+                    <option value="United Bank for Africa">United Bank for Africa</option>
+                    <option value="Zenith Bank">Zenith Bank</option>
+                </select>
+            </div>
+            <div id="acctypeD">
+                <label for="acctype">Account type</label>
+                <select name="acctype" require id="acctype">
+                    <option selected>Choose...</option>
+                    <option value="NGN">Savings(naira)</option>
+                    <option value="USD">Current(naira)</option>
+                    <option value="GBP">Pounds Account</option>
+                    <option value="EUR">Dollar Account</option>
+                    <option value="CNY">Euro Account</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div>
+            <div id="accnoD">
+                <label for="accno">Account Number</label> <span id="accnoV"></span>
+                <input require id="accno" name="accno">
+            </div>
+            <div id="beeD">
+                <label for="bee">BVN</label> <span id="beeV"></span><br>
+                <input require id="bee" name="bvn">
+            </div>
+
+        </div>
+
+
+        <div>
+            Upload a valid means of identification. Select ID type and upload:
+        </div>
+        <div>
+            <select name="mid" require id="mid">
+                <option selected>Choose...</option>
+                <option value="International Passport">International Passport</option>
+                <option value="Drivers Liscence">Drivers Liscence</option>
+                <option value="Voters Card">Voters Card</option>
+                <option value="National ID Card">National ID Card</option>
+                <option value="State ID Card">State ID Card e.g LASTRA</option>
+            </select>
+            <input type="file" name="file">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
